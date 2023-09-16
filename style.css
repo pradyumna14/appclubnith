@@ -1,0 +1,215 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  background-image: url('assets/lol.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.club-name {
+    font-size: 20px;
+    font-weight: bold; 
+    margin: 0; 
+}
+
+
+.container-right {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 14px;
+    padding: 26px;
+    width: 384px;
+    height: 526px;
+    margin: 0;
+    position: absolute;
+    top: 54%;
+    right: 99px;
+    transform: translateY(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.company-location {
+    font-size: 24px; 
+    color: #555; 
+}
+
+/* Style the header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1.company-name {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.animation {
+    font-size: 24px;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.motto {
+    margin-top: 20px;
+}
+
+.motto p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    
+    width: 100%;
+    position: absolute; 
+    bottom: 0; 
+    z-index: 999; 
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    z-index: 999; 
+}
+
+
+.logo {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .navbar {
+        padding: 10px; 
+    }
+
+    
+    .navbar-left, .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    
+    .nav-link {
+        margin: 0 5px;
+    }
+
+    
+    header {
+        padding: 10px;
+    }
+
+    .company-name {
+        font-size: 28px;
+    }
+
+    .company-location {
+        font-size: 18px;
+    }
+
+    
+    .motto {
+        padding: 10px;
+    }
+
+    .motto p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .feature {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .feature img {
+        max-width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+}
